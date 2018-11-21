@@ -21,7 +21,7 @@ public class DapatkanAlamatTask extends AsyncTask<Location, Void, String>{
         Geocoder geocoder = new Geocoder(mContex, Locale.getDefault());
         Location location = locations[0];
         List<Address> alamat = null;
-        String resultMessage = null;
+        String resultMessage = null; //ubah
 
         try{
             alamat = geocoder.getFromLocation(
@@ -73,6 +73,6 @@ public class DapatkanAlamatTask extends AsyncTask<Location, Void, String>{
         mListener = listener;
     }
     interface onTaskSelesai{
-        void onTaskCompleted(String result);
+        void onTaskCompleted(String result)throws SecurityException; //ubah
     }
 }

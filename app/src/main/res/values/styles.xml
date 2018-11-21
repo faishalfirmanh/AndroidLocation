@@ -6,6 +6,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/green</item>
+        
+    </style>
+    <style name="buttonWarn" parent ="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/green</item>
     </style>
 
 </resources>
